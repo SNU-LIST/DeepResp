@@ -10,15 +10,14 @@ savepath = '../data/train' # path to save simulated data
                            # For test, '../data/test/'
         
 
-# network paramter
-OUTPUT_COUNT = 16 # The number of output points per group
-img_size = 224 # Input images size (n x n)
-first_channel = 16 # The number of channel of the first convolution layer
-initial_lr = 8e-3 # Initial learning rate
+##Parameter
+const = 0.05 * 2 # const: scale of phase error to normalize (frequency shifht (Hz) * TE (sec))
+TR = 1.2 # TR (sec)(sampling period of respiration data to reformat into phase errors)
+isrot = 10 # rotation angle for image augmentation
+isflip = 0.5 # probablity to apply horizontal flipping for image augmentation
+amp = [0.05, 1] # output scale range [min, max]
+SNR = [50,200] # SNR range [min, max]
+resp_params = [500, 390] # rparamter of respiration data [sampling rate (Hz), measuretime(sec)]
 
-# training paramter
-epochs = 5 # The number of epochs
-batch_size = 100 # bathc size
-iteration_lr_step = 50 # The number of interation for one step of learning rate scheduler
-
-iteration_print = 50 # The number of interation to print itermediate results
+data_size = 100 # The number of images per one npy file
+data_count = 100 # The number of npy files
