@@ -3,6 +3,17 @@ import torch.nn as nn
 import torch.nn.functional as F
 import numpy as np
 
+#
+# Description:
+#  Modified ResNet in the first stage of DeepResp
+#
+#  Copyright @ Hongjun An
+#  Laboratory for Imaging Science and Technology
+#  Seoul National University
+#  email : plynt@naver.com
+#
+
+
 def weights_initialize(m):
     classname = m.__class__.__name__
     if classname.find("Conv") != -1:
