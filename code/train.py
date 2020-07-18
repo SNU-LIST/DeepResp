@@ -3,7 +3,7 @@ import torch.optim as optim
 import numpy as np
 from datetime import datetime
 import os
-
+import time
 import network_model as _net
 from training_params import *
 
