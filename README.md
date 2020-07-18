@@ -1,2 +1,2 @@
 # DeepResp
-Source code for DeepRF_SLR
+Source code for DeepResp
