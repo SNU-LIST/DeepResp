@@ -5,7 +5,17 @@ from scipy.ndimage import rotate as rot
 import random
 
 class Simulator(Dataset):
-    def __init__(self,image, sig, TR, num_s, num_e, SNR, amp, const, isrot = 0,isflip=0):
+    def __init__(self,image, sig, resp_params, TR, SNR, amp, const, isrot = 0, isflip=0):
+        # image: image data,
+        # sig: respiration data
+        # resp_params : paramter of respiration data [sampling rate (Hz), measuretime(sec)]
+        # TR : TR (sec)(sampling period of respiration data to reformat into phase errors)
+        # SNR: SNR range [min, max]
+        # amp: output scale range [min, max]
+        # const: scale of phase error to normalize (frequency shifht (Hz) * TE (sec))
+        # isrot: rotation angle for image augmentation
+        # isflip: probablity to apply horizontal flipping for image augmentation
+        
         self.len = image.shape[2]
         self.TR = TR
         self.image_data = image
@@ -20,21 +30,22 @@ class Simulator(Dataset):
         self.snr_min = SNR[0]
         self.snr_max = SNR[1]
         self.isfilp = isflip
+        self.sample_rate = resp_params[0]
+        self.max_time = resp_params[1]
         
+        self.output_size = image.shape[1]
     def __getitem__(self, index):
         sig_size = self.sig_size
-
-        sample_rate = 500
-        tmax = 390
         TR = self.TR
-        output_size = 224
-        num_e = self.num_e
-        num_s = self.num_s
+        sample_rate = self.sample_rate
+        tmax = self.max_time
+        output_size = self.output_size
+
 
         #phase error_make
         start_time = (tmax - TR * output_size-1/sample_rate) * random.random()
         amp = self.rand_min+(self.rand_max-self.rand_min) * random.random()
-        sig_match = random.randint(0,sig_size-1) # kind of signal
+        sig_match = random.randint(0,sig_size-1) # subject of signal
         res_time = np.expand_dims(np.int32(np.round(
             np.linspace(start_time, start_time + TR * output_size, output_size)*sample_rate)),axis=1) # time of signal
         
@@ -72,7 +83,7 @@ class Simulator(Dataset):
         ref_images[0,:,:] = np.real(ref_comp_img)
         ref_images[1,:,:] = np.imag(ref_comp_img)
 
-        return torch.from_numpy(ref_images), torch.from_numpy(labels), torch.from_numpy(temp_sig[0,:])
+        return ref_images, temp_sig[0,:]
     
     def __len__(self):
         return self.len
