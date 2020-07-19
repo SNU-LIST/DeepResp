@@ -25,8 +25,6 @@ class Simulator(Dataset):
         self.rand_min = amp[0]
         self.sig_size = sig.shape[0]
         self.isrot = isrot
-        self.num_e = num_e
-        self.num_s = num_s
         self.snr_min = SNR[0]
         self.snr_max = SNR[1]
         self.isfilp = isflip
