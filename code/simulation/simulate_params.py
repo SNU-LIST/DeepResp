@@ -1,10 +1,10 @@
-image_path = '../../data/acquired_data_for_simulation/test/test_img.npy' # path to artifact-free MR images
-                                                      # For train, '../../data/acquired_data_for_simulation/train/train_img.npy'
-                                                      # For test, '../../data/acquired_data_for_simulation/test/test_img.npy'
+image_path = '../../data/acquired_data_for_simulation/test/test_img_mini.npy' # path to artifact-free MR images
+                                                      # For train, '../../data/acquired_data_for_simulation/train/train_img_mini.npy'
+                                                      # For test, '../../data/acquired_data_for_simulation/test/test_img_mini.npy'
         
-resp_path = '../../data/acquired_data_for_simulation/test/test_resp.npy' # path to respiration data
-                                                            # For train, '../../data/acquired_data_for_simulation/train/train_resp.npy'
-                                                            # For test, '../../data/acquired_data_for_simulation/test/test_resp.npy'
+resp_path = '../../data/acquired_data_for_simulation/test/test_resp_mini.npy' # path to respiration data
+                                                            # For train, '../../data/acquired_data_for_simulation/train/train_resp_mini.npy'
+                                                            # For test, '../../data/acquired_data_for_simulation/test/test_resp_mini.npy'
 savepath = '../../data/evaluation/simulated' # path to save simulated data
                            # For train, '../../data/train'
                            # For test, '../../data/evaluation/simulated'
