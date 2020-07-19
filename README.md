@@ -34,7 +34,8 @@
 
 
 ## Simulation
-* The source code for simulation generates the simulated respiration-corrupted images with the MR images and the respiration data (data/acquired_data_for_simulation).
+* The source code for simulation generates the simulated respiration-corrupted images with the MR images and the respiration data.
+* MR images : (Height x Width x slices) complex numpy data,  Respiration data : (Subjects x data sample) float numpy data, 
 * Results: the complex-valued numpy images ( read-out x phase-encoding x slice ) are generated.
 
 ## Training
