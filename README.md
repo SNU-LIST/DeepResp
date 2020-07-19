@@ -46,3 +46,7 @@
 * The evaluation can be performed with the simulated data and the in-vivo data.
 * Results: networks-generated phase errors
 
+## Correction
+* The source code for correction of corrupted images using phase errors (network-generated or reference)
+* Results: DeepResp-corrected images, reference-corrected images
+
