@@ -19,13 +19,13 @@
 ## Data acquisition
 * MR images for simulation were acquired at 3T MRI (SIEMENS), which were from below refereces. The images were either zero-padded or cropped in k-space to match the matrix size to 224 × 224. Each image was masked out noises in the background using an intensity threshold to remove artifacts in the background.
 
-* QSMnet </br>
-_J. Yoon, E. Gong, I. Chatnuntawech, B. Bilgic, J. Lee, W. Jung, J. Ko, H. Jung, K. Setsompop, G. Zaharchuk, E.Y. Kim, J. Pauly, J. Lee.
-Quantitative susceptibility mapping using deep neural network: QSMnet.
-Neuroimage. 2018 Oct;179:199-206. https://www.sciencedirect.com/science/article/pii/S1053811918305378_
-* QSMnet+ </br>
-_W. Jung, J. Yoon, S. Ji, J. Choi, J. Kim, Y. Nam, E. Kim, J. Lee. Exploring linearity of deep neural network trained QSM: QSMnet+.
-Neuroimage. 2020 May; 116619. https://www.sciencedirect.com/science/article/pii/S1053811920301063_
+  * QSMnet </br>
+  _J. Yoon, E. Gong, I. Chatnuntawech, B. Bilgic, J. Lee, W. Jung, J. Ko, H. Jung, K. Setsompop, G. Zaharchuk, E.Y. Kim, J. Pauly, J. Lee.
+  Quantitative susceptibility mapping using deep neural network: QSMnet.
+  Neuroimage. 2018 Oct;179:199-206. https://www.sciencedirect.com/science/article/pii/S1053811918305378_
+  * QSMnet+ </br>
+  _W. Jung, J. Yoon, S. Ji, J. Choi, J. Kim, Y. Nam, E. Kim, J. Lee. Exploring linearity of deep neural network trained QSM: QSMnet+.
+  Neuroimage. 2020 May; 116619. https://www.sciencedirect.com/science/article/pii/S1053811920301063_
 
 
 * Respiration data for simulation was acquired with a a temperature sensor (Biopac). The data were sampled at 500 Hz and recorded for 7 sessions, each with 390 seconds. A median filter and a bandpass-filter (passband: 0.1 Hz ~ 1 Hz) were applied to reduce noise.
