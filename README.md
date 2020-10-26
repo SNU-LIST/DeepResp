@@ -4,6 +4,10 @@
 * The source data for training can be shared to academic institutions. Request should be sent to snu.list.software@gmail.com. For each request, individual approval from our institutional review board is required (i.e. takes time)
 * For more information, refer to the published paper (https://doi.org/10.1016/j.neuroimage.2020.117432)
 
+# References
+DeepResp: Deep learning solution for respiration-induced B0 fluctuation artifacts in multi-slice GRE
+H. An, H.-G. Shin, S. Ji, W. Jung, S. Oh, D. Shin, J. Park, J. Lee. DeepResp: Deep learning solution for respiration-induced B0 fluctuation artifacts in multi-slice GRE. Neuroimage. 2021
+
 # Overview
 ## DeepResp
 ![grapical_abstract](https://user-images.githubusercontent.com/57519974/87869870-3e197580-c9de-11ea-8092-b0d017abbb82.png)
