@@ -6,7 +6,7 @@
 
 # References
 * DeepResp: Deep learning solution for respiration-induced B0 fluctuation artifacts in multi-slice GRE
-H. An, H.-G. Shin, S. Ji, W. Jung, S. Oh, D. Shin, J. Park, J. Lee. DeepResp: Deep learning solution for respiration-induced B0 fluctuation artifacts in multi-slice GRE. Neuroimage. 2021 Jan. vol224. https://www.sciencedirect.com/science/article/pii/S1053811920309174
+H. An, H.-G. Shin, S. Ji, W. Jung, S. Oh, D. Shin, J. Park, J. Lee. DeepResp: Deep learning solution for respiration-induced B0 fluctuation artifacts in multi-slice GRE. Neuroimage. 2021 Jan. v 224. https://www.sciencedirect.com/science/article/pii/S1053811920309174
 
 # Overview
 ## DeepResp
