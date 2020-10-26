@@ -1,6 +1,6 @@
 # DeepResp
 * The code is for correction of respidation-induced B0 fluctuation artifacts using deep learning (DeepResp)
-* Last update : 2020.07.19
+* Last update : 2020.10.26
 * The source data for training can be shared to academic institutions. Request should be sent to snu.list.software@gmail.com. For each request, individual approval from our institutional review board is required (i.e. takes time)
 * For more information, refer to the published paper (https://doi.org/10.1016/j.neuroimage.2020.117432)
 
